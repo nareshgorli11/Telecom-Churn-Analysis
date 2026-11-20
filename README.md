@@ -38,5 +38,5 @@ Python (pandas), MySQL, Excel (coming soon), Power BI (coming soon)
 - `images/`: query result screenshots
 
 ## SQL Results
-![Churn by contract](images/q2_contract.png)
-![Churn by tenure](images/q3_tenure.png)
+![Churn by contract](images/Q2_contract.png)
+![Churn by tenure](images/Q3_tenure.png)
