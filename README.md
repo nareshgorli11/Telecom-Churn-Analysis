@@ -8,12 +8,17 @@ Telco Customer Churn dataset (7,043 customers, 21 columns), from Kaggle:
 https://www.kaggle.com/datasets/blastchar/telco-customer-churn
 
 ## Tools Used
-Python (pandas), MySQL, Excel (coming soon), Power BI (coming soon)
+Python (pandas), MySQL, Excel (PivotTables), Power BI (coming soon)
 
 ## Data Cleaning (Python)
 - Converted `TotalCharges` from text to numbers (11 blank values, all new customers with 0 tenure, set to 0)
 - Created `TenureGroup` and `ChurnFlag` columns
 - Checked for nulls and duplicates (none found)
+
+  ## Excel Analysis
+Built PivotTables on the cleaned data to confirm the SQL results by contract type, tenure group and payment method. The Excel results match the SQL results. File: `churn_pivots.xlsx`
+
+![Excel pivot](Images/excel_pivot.png)
 
 ## Key Findings (SQL)
 - **Overall churn rate is 26.54%** (1,869 of 7,043 customers).
@@ -35,6 +40,7 @@ Python (pandas), MySQL, Excel (coming soon), Power BI (coming soon)
 - `churn_cleaning.ipynb`: Python data cleaning
 - `churn_clean.csv`: cleaned dataset
 - `churn_queries.sql`: MySQL queries
+- - `churn_pivots.xlsx`: Excel PivotTables
 - `images/`: query result screenshots
 
 ## SQL Results
